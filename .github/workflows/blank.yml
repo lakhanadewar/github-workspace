@@ -1,0 +1,11 @@
+# This is yml file to config the workflow
+name: First workflow
+on: workflow_dispatch
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first message
+        run: echo "Hello World!"
+      - name: second message
+        run: echo "Bye! see you"
